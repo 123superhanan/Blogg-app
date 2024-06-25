@@ -16,7 +16,7 @@ const BlogCard = ({blog}) => {
 
    {/* passing props from the array of data created in BlogData.js*/ }
 
-            <img src={blog.image} alt={blog.title} />
+   <div className="c-img"><img src={blog.image} alt={blog.title} /></div>
             <div className="card-down">
             <Link to={`/category/${blog.category}`}> <span>{blog.category}</span></Link>
             <h2>{blog.content}</h2>

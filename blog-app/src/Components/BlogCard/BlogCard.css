@@ -22,9 +22,16 @@
     border-radius: 4px;
    
 }
+.c-img{
+    width: 100%;
+    background-color:#181A2A;
+    background: 7px;
+    
+}
 .card img{
     width: 100%;
-
+    object-fit: contain;
+    object-position: center;
 }
 .card h2{
     font-weight: 500;
