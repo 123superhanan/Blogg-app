@@ -23,12 +23,13 @@
         object-fit: cover;
         object-position: center;
         border-radius: 7px;
-        
+       
     }
     .blog-category-page-content  .img{
         width: 100%;
         height: 50vh;
         background-color: #97989F;
-border-radius: 7px;
+        border-radius: 7px;
+        margin-top: 30px;
     }
     

@@ -18,6 +18,7 @@ const filteredBlogs = blogData.filter(blog => blog.category.toLowerCase().includ
 
 const handleArrowClick = () => {
     navigate(-1);
+    
   };
   return (
     <>

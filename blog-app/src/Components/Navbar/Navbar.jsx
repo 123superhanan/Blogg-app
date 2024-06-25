@@ -11,13 +11,15 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   const handleSearchChange = (e) => {
-    setSearchQuery(e.target.value);
+            setSearchQuery(e.target.value);
   }
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    if(searchQuery.trim() === '') return;
-  navigate(`/search?type=category&Query=${searchQuery}`);
-  setSearchQuery('')
+
+        if(searchQuery.trim() === '') return;
+            navigate(`/search?type=category&Query=${searchQuery}`);
+            setSearchQuery('')
+
   };
 
  
@@ -40,7 +42,8 @@ const Navbar = () => {
         <div className="nav-right">
           <div className="search">
 
-   {/* search bar for filtered data !!!! functionality addition expexcted !!!! */ }
+   {/* search bar for filtered data !!!! search according to categories!!!! */ }
+
           <input type="text"
           value={searchQuery}
           onChange={handleSearchChange}
@@ -49,7 +52,8 @@ const Navbar = () => {
           <CiSearch size={20}  /> { /*icon*/}
           </button>
           </div>
-   {/* theme change switch  !!!! functionality addition expexcted !!!! */ }
+          
+   {/* theme change switch  !!!! functionality addition expexcted !!!! CONTEXT API */ }
 
          <img src="./src/assets/Swich.png" alt="fake-switch-dev-prac-1" />
           
