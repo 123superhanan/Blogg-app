@@ -29,7 +29,25 @@ body,html{
     width: 170px;
     border-radius: 4px;
     position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.search-page{
+padding: 1em 6em;
+}
+.search-page h3{
+    font-weight: 500;
+}
+.search-page-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.search-page-content pre{
+   font-size: 20px;
+    margin-top: 40px;
+    font-weight: 500;
+    color: red;
+    
 }

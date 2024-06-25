@@ -1,11 +1,27 @@
 import React from 'react'
 import "./Navbar.css"
-import {Link} from "react-router-dom"
+import {Link, useNavigate } from "react-router-dom"
 import { CiSearch } from "react-icons/ci";
+import { useState } from 'react';
 
 
 
 const Navbar = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+  const navigate = useNavigate();
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  }
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    if(searchQuery.trim() === '') return;
+  navigate(`/search?type=category&Query=${searchQuery}`);
+  setSearchQuery('')
+  };
+
+ 
+  
   return (
     <>
       <div className="navbar ">
@@ -25,8 +41,13 @@ const Navbar = () => {
           <div className="search">
 
    {/* search bar for filtered data !!!! functionality addition expexcted !!!! */ }
-          <input type="text" placeholder='Search'/>
-          <CiSearch size={20}/> { /*icon*/}
+          <input type="text"
+          value={searchQuery}
+          onChange={handleSearchChange}
+          placeholder="Search by Category" ></input> 
+          <button  onClick={handleSearchSubmit}> 
+          <CiSearch size={20}  /> { /*icon*/}
+          </button>
           </div>
    {/* theme change switch  !!!! functionality addition expexcted !!!! */ }
 

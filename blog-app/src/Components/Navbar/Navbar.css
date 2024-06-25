@@ -46,6 +46,13 @@
 .search input::placeholder{
     padding: 10px;
 }
+.search button{
+    border: 0;
+    outline: 0;
+    width: 20%;
+    background-color: transparent;
+    color: #fff;
+}
 @media (max-width: 800px) {
     .nav-left ul{
         display: none;
