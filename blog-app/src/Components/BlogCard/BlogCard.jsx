@@ -22,7 +22,7 @@ const BlogCard = ({blog}) => {
             <h2>{blog.content}</h2>
             <div className='over-end'>
               <img src={blog.Authorimage} alt="img" />
-              <p>{blog.author}</p>
+          <Link to={`/author/${blog.author}`}> <p>{blog.author}</p></Link>
               <p>{blog.info}</p>
 
             </div>

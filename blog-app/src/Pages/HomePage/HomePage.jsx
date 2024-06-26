@@ -3,11 +3,17 @@ import "./HomePage.css"
 import Add from '../../Components/Add/Add'
 import BlogCard from '../../Components/BlogCard/BlogCard'
 import blogData from "../../BlogData"
+
+
 const HomePage = () => {
 
+  const viewBtnAlert = () => {
+    alert("No More Data Please Enable BackEnd ")
+  }
   
-
   return (
+
+
     <>
       <div className="Home-page ">
       
@@ -41,7 +47,7 @@ const HomePage = () => {
       </div>
    {/* button for view more !!!! functionality addition expexcted !!!! */ }
       
-  <div className="universal-btn"><button >view more</button></div>
+  <div className="universal-btn" onClick={viewBtnAlert}><button >view more</button></div>
 
   <Add/>
 </div>

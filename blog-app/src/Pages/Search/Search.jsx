@@ -10,6 +10,9 @@ const useQyery = () =>{
 }
 
 const Search = () => {
+
+  {/*MAKING SEARCH COMPONENT TO SHOW SEARCHED DATA ACCORDING TO CATEGORIES*/}
+
 const Query = useQyery();
 const navigate = useNavigate();
 const searchQuery = Query.get('Query').toLowerCase();
@@ -18,7 +21,7 @@ const filteredBlogs = blogData.filter(blog => blog.category.toLowerCase().includ
 
 const handleArrowClick = () => {
     navigate(-1);
-    
+
   };
   return (
     <>

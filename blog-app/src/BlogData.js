@@ -9,6 +9,7 @@ const blogData = [
         image: "/src/assets/h-c-1.png",
         category:"Technology",
         author:"Jhonson Doe",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Technology on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-1.png",
         info:"August 20, 2022"
@@ -21,6 +22,7 @@ const blogData = [
 
         category:"Technology",
         author:"Alen franki",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Technology on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-2.png",
 
@@ -34,6 +36,7 @@ const blogData = [
 
         category:"Technology",
         author:"Jhonson Doe",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Technology on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-3.png",
 
@@ -46,6 +49,7 @@ const blogData = [
 
         category:"Economy",
         author:"Jason Frankalio",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Economy on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-1.png",
 
@@ -58,6 +62,7 @@ const blogData = [
 
         category:"Economy",
         author:"Alen franki",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Economy on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-2.png",
         
@@ -70,6 +75,7 @@ const blogData = [
         
         category:"Economy",
         author:"Jhonson Doe",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Economy on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-3.png",
 
@@ -82,6 +88,7 @@ const blogData = [
 
         category:"Politics",
         author:"Jhonson Doe",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Politics on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-1.png",
 
@@ -93,6 +100,7 @@ const blogData = [
         image: "./src/assets/h-c-8.png",
         category:"Politics",
         author:"Jason Frankalio",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Politics on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-2.png",
 
@@ -105,9 +113,9 @@ const blogData = [
 
         category:"Politics",
         author:"Jason Frankalio",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Politics on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-3.png",
-
         info:"August 20, 2022"
     },{
         id:10,
@@ -115,6 +123,7 @@ const blogData = [
         image: "/src/assets/h-c-1.png",
         category:"Technology",
         author:"Jhonson Doe",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Technology on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-1.png",
         info:"August 20, 2022"
@@ -127,21 +136,20 @@ const blogData = [
 
         category:"Politics",
         author:"Jason Frankalio",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Politics on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-3.png",
-
         info:"August 20, 2022"
     },
     {
         id:12,
         title:'post-six',
         image: "/src/assets/h-c-6.png",
-        
         category:"Economy",
         author:"Jhonson Doe",
+        authorInfo:"Collaborator & Editor",
         content:"The Impact of Economy on the Workplace: How Technology is Changing",
         Authorimage:"/src/assets/au-3.png",
-
         info:"May 20, 2022"
     }
 ]

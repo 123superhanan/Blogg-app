@@ -6,6 +6,7 @@ import BlogPage from "./Pages/BlogPage/BlogPage.jsx";
 import BlogCate from "./Pages/BlogCate/BlogCate.jsx";
 import {Routes, Route} from "react-router-dom"
 import Search from "./Pages/Search/Search.jsx";
+import AuthorPage from "./Pages/AuthorPage/AuthorPage.jsx";
 
 function App() {
   
@@ -18,6 +19,7 @@ function App() {
    <Route  path="BlogPage" element={<BlogPage/>} />  
    <Route  path="/category/:category" element={<BlogCate/>} />  
    <Route  path="/search" element={<Search/>} />  
+   <Route  path="/author/:author" element={<AuthorPage/>} />  
 
      
      </Routes>

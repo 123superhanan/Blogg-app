@@ -6,6 +6,7 @@ import BlogCard from '../../Components/BlogCard/BlogCard';
 import {useEffect, useState, } from "react"
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import Add from '../../Components/Add/Add'
+
  
 const BlogCate = () => {
 

@@ -6,6 +6,10 @@ import Add from '../../Components/Add/Add'
 
 const BlogPage = () => {
 
+  const viewBtnAlert = () => {
+    alert("No More Data Please Enable BackEnd on blog page ")
+
+  }
   return (
     <>
   <div className="Blog-page">
@@ -29,7 +33,7 @@ const BlogPage = () => {
 
       </div>
     </div>
-    <div className="universal-btn"><button >view more</button></div>
+    <div className="universal-btn"  onClick={viewBtnAlert}><button >view more</button></div>
 
    <Add/>
 

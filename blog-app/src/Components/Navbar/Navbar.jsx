@@ -7,8 +7,16 @@ import { useState } from 'react';
 
 
 const Navbar = () => {
+
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
+
+   {/* making a transition on search bar */ }
+
+  const [isActive, setIsActive] = useState(false);
+  const toggleActive = () => {
+    setIsActive(!isActive);
+  };
 
   const handleSearchChange = (e) => {
             setSearchQuery(e.target.value);
@@ -40,22 +48,26 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="nav-right">
-          <div className="search">
+   {/* making a transition on search bar */ }
+
+          <div className={`search ${isActive ? 'active' : ''}`}>
 
    {/* search bar for filtered data !!!! search according to categories!!!! */ }
 
           <input type="text"
           value={searchQuery}
           onChange={handleSearchChange}
-          placeholder="Search by Category" ></input> 
+          placeholder="Search by Category" 
+          onClick={toggleActive}  ></input> 
           <button  onClick={handleSearchSubmit}> 
           <CiSearch size={20}  /> { /*icon*/}
           </button>
           </div>
           
    {/* theme change switch  !!!! functionality addition expexcted !!!! CONTEXT API */ }
+   {/* making switch to display none  on search bar transition.... */ }
 
-         <img src="./src/assets/Swich.png" alt="fake-switch-dev-prac-1" />
+         <img src="./src/assets/Swich.png" alt="fake-switch-dev-prac-1" className={`side-image ${isActive ? 'hidden' : ''}`} />
           
         </div>
       </div>
