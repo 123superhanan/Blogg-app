@@ -1,6 +1,5 @@
 import React from 'react'
 import "./AuthorPage.css"
-
 import Add from '../../Components/Add/Add'
 import blogData from '../../BlogData';
 import BlogCard from '../../Components/BlogCard/BlogCard';
@@ -11,11 +10,6 @@ const AuthorPage = () => {
   
   const { author } = useParams();
   const authorBlogs = blogData.filter(blog => blog.author === author);
-  
-
-  
-
-  
 
   return (
     <>

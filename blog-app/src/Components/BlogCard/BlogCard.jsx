@@ -19,7 +19,7 @@ const BlogCard = ({blog}) => {
    <div className="c-img"><img src={blog.image} alt={blog.title} /></div>
             <div className="card-down">
             <Link to={`/category/${blog.category}`}> <span>{blog.category}</span></Link>
-            <h2>{blog.content}</h2>
+        <Link to={`/blog/${blog.id}`}> <h2>{blog.content}</h2></Link>  
             <div className='over-end'>
               <img src={blog.Authorimage} alt="img" />
           <Link to={`/author/${blog.author}`}> <p>{blog.author}</p></Link>
