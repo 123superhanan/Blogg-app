@@ -42,7 +42,7 @@ const Navbar = () => {
           <ul>
           <li><Link to={"/"} >Home</Link></li>
           <li><Link to={"/BlogPage"} >Blog</Link></li>
-          <li><Link >SinglePost</Link></li>
+          <li><Link to={"SinglePostPage"} >SinglePost</Link></li>
           <li><Link >Pages</Link></li>
           <li><Link >Contact</Link></li>
           </ul>

@@ -33,7 +33,7 @@ const handleArrowClick = () => {
             {filteredBlogs.length > 0 ? (
                 filteredBlogs.map(blog => <BlogCard key={blog.id} blog={blog} />)):
                 (
-                   <pre>/404/ No Result!! check spelling </pre> 
+                   <marquee>/404/ No Result!! check spelling </marquee> 
                 )
             }
         </div>
