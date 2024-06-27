@@ -15,16 +15,16 @@ function App() {
   return (
     <>
      <Navbar/>
-     <Routes>
+
+  <Routes>
    <Route  path="/" element={<HomePage/>} /> 
    <Route  path="BlogPage" element={<BlogPage/>} />  
    <Route  path="/category/:category" element={<BlogCate/>} />  
    <Route  path="/search" element={<Search/>} />  
    <Route path="/blog/:id" element={<SinglePostPage />} /> {/* Single post route */}
-   <Route  path="/author/:author" element={<AuthorPage/>} />  
+   <Route  path="/author/:author" element={<AuthorPage/>} /> 
+  </Routes>
 
-     
-     </Routes>
      <Footer/>
     </>
   )

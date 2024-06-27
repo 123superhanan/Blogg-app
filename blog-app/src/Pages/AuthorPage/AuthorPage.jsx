@@ -14,7 +14,7 @@ const AuthorPage = () => {
   return (
     <>
       <div className="Author-page">
-        <marquee  >This is Author page (filtered)</marquee>
+        <marquee  >This is Author page (filtered by name)</marquee>
         <div className="author-content">
        
 
