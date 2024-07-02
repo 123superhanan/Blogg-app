@@ -9,6 +9,7 @@ import Search from "./Pages/Search/Search.jsx";
 import AuthorPage from "./Pages/AuthorPage/AuthorPage.jsx";
 import SinglePostPage from "./Pages/SinglePost/SinglePostPage.jsx";
 
+
 function App() {
   
 

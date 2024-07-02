@@ -7,9 +7,15 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    
+    "start": "nodemon server.js"
+    
+  
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "slick-carousel": "^1.8.1"
