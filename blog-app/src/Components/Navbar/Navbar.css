@@ -50,7 +50,9 @@
     width: 300px;
     position: absolute;
     transform: translateX(-70px);
-    z-index: 1000;
+    transition: all linear 0.3s;
+ 
+    z-index: 1;
 }
 
 .navbar .active {
