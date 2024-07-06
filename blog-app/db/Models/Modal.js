@@ -1,12 +1,23 @@
-const mongoose = require('mongoose');
+import mongoose  from 'mongoose';
 
 const postSchema = new mongoose.Schema({
-    img: String,
+    id: Number,
     title: String,
-    text: String,
+    image: String,
     category: String,
-    detailedText: String,
-    descriptionImg: String,
+    author: String,
+    authorInfo: String,
+    content: String,
+    Authorimage: String,
+    info: String,
+    detailedInfo: String,
+    detailedInfos: String,
+    detailedHead: String,
+    detailedHead2: String,
+    detailedHead3: String,
+    detailedHead4: String,
+    detailedHead5: String,
+    detailedHead6: String,
 });
 
 const Post = mongoose.model('Post', postSchema);

@@ -1,8 +1,9 @@
-import express from "express";
+import  express from 'express';
 const router = express.Router();
 
+const { getAllPosts, createPost } = require('../controler/Controler.js');
 
-router.route('/').get("gettAllProducts")
-router.route('/testing').get("gettAllProductsTesting")
+router.get('/posts', getAllPosts);
+router.post('/posts', createPost);
 
 export default router
