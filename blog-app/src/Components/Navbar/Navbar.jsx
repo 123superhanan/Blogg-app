@@ -21,6 +21,7 @@ const Navbar = () => {
   const handleSearchChange = (e) => {
             setSearchQuery(e.target.value);
   }
+  
   const handleSearchSubmit = (e) => {
     e.preventDefault();
 
