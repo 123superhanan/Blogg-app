@@ -44,14 +44,16 @@ const Navbar = () => {
           <li><Link to={"/"} >Home</Link></li>
           <li><Link to={"/BlogPage"} >Blog</Link></li>
           <li><Link to={"SinglePostPage"} >SinglePost</Link></li>
-          <li><Link >Pages</Link></li>
+          
           <li><Link >Contact</Link></li>
+          <li><Link to={"SignUp"}>SignUp</Link></li>
+
           </ul>
         </div>
         <div className="nav-right">
    {/* making a transition on search bar */ }
 
-          <div className={`search ${isActive ? 'active' : ''}`}>
+      <div className={`search ${isActive ? 'active' : ''}`}>
 
    {/* search bar for filtered data !!!! search according to categories!!!! */ }
 
@@ -60,10 +62,13 @@ const Navbar = () => {
           onChange={handleSearchChange}
           placeholder="Search by Category" 
           onClick={toggleActive}  ></input> 
+
           <button  onClick={handleSearchSubmit}> 
+
           <CiSearch size={20}  /> { /*icon*/}
+          
           </button>
-          </div>
+      </div>
           
    {/* theme change switch  !!!! functionality addition expexcted !!!! CONTEXT API */ }
    {/* making switch to display none  on search bar transition.... */ }

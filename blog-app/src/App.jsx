@@ -8,7 +8,8 @@ import {Routes, Route} from "react-router-dom"
 import Search from "./Pages/Search/Search.jsx";
 import AuthorPage from "./Pages/AuthorPage/AuthorPage.jsx";
 import SinglePostPage from "./Pages/SinglePost/SinglePostPage.jsx";
-
+import SignUp from "./Pages/SignUp/SignUp.jsx";
+import LogIn from "./Pages/loggIn/LogIn.jsx";
 
 function App() {
   
@@ -24,6 +25,10 @@ function App() {
    <Route  path="/search" element={<Search/>} />  
    <Route path="/blog/:id" element={<SinglePostPage />} /> {/* Single post route */}
    <Route  path="/author/:author" element={<AuthorPage/>} /> 
+   <Route  path="/SignUp" element={<SignUp/>} /> 
+   <Route  path="/LogIn" element={<LogIn/>} /> 
+
+
   </Routes>
 
      <Footer/>
