@@ -7,7 +7,6 @@ import { useState } from 'react';
 
 
 const Navbar = () => {
-  const [signstate, setSignState] = useState(false);
   
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
@@ -44,13 +43,10 @@ const Navbar = () => {
           <ul>
           <li><Link to={"/"} >Home</Link></li>
           <li><Link to={"/BlogPage"} >Blog</Link></li>
-          <li><Link to={"SinglePostPage"} >SinglePost</Link></li>
+          <li><Link to={"/SinglePostPage"} >SinglePost</Link></li>
           <li><Link >Contact</Link></li>
-          <li>
-      <Link to={isLoggedIn ? '/signUp' : '/logIn'}>
-        {isLoggedIn ? 'Sign Up' : 'Log In'}
-      </Link>
-    </li>
+          
+          <li><Link to={"LogIn"}>LogIn</Link></li>
 
           </ul>
         </div>

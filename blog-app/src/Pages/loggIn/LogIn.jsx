@@ -28,6 +28,7 @@ const [signstate, setSignState] = useState("Sign In");
             <button>{signstate}</button>
             <div className="form-switch">
             {signstate==="Sign In"?
+            
           <p>New To MetaBlog ? <span  onClick={()=>{setSignState("Sign Up")}}>Sign Up Now</span></p>:
           <p>Already Have a Account <span onClick={()=>{setSignState("Sign In")}}>Sign In Now</span></p>}
           </div>
