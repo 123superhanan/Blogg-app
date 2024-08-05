@@ -21,7 +21,7 @@ if (!blog) {
            <span>{blog.category}</span>
             <h2>The Impact of {blog.category} on the Workplace: How Technology is Changing:</h2>
             <div className='over-end'>
-              <img src="./src/assets/au-2.png" alt="img" />
+              <img src={blog.image} alt="img" />
               <p>{blog.author}</p>
               <p>{blog.info}</p>
             </div>

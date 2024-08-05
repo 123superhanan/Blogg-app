@@ -46,7 +46,7 @@ const Navbar = () => {
           <li><Link to={"/SinglePostPage"} >SinglePost</Link></li>
           <li><Link >Contact</Link></li>
           
-          <li><Link to={"LogIn"}>LogIn</Link></li>
+          <li><Link to={"LogIn"}>Register</Link></li>
 
           </ul>
         </div>

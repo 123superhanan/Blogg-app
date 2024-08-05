@@ -13,8 +13,11 @@
  
 }
 .single-post-overlay{
-   
+    background-color: #242535;
+    box-shadow: 2px 2px 3px #0000007c;
     margin-bottom: 30px;
+    border-radius: 7px;
+    padding: 5px;
 }
 
 .single-post-overlay span{

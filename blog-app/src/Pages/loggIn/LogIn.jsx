@@ -25,7 +25,7 @@ const [signstate, setSignState] = useState("Sign In");
             <p>Need Help?</p>
           </div>
             </form>
-            <button>{signstate}</button>
+            <button type='submit'>{signstate}</button>
             <div className="form-switch">
             {signstate==="Sign In"?
             
